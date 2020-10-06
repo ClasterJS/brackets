@@ -1,8 +1,5 @@
 module.exports = function check(str, bracketsConfig) {
   // your solution
-  //start task
-  //str =                                  [(])
-  //bracketsConfig                               [['(', ')'], ['[', ']']];
   if ((str < 1) || (str.length % 2 !== 0)) {
       return false;
   }
@@ -13,8 +10,6 @@ module.exports = function check(str, bracketsConfig) {
     openBrackets.push(bracketsConfig[i][0]);
     closeBrackets.push(bracketsConfig[i][1]);
   };
-  //console.log(openBrackets);
-  //console.log(closeBrackets);
 
   let stack = [];
   for (let i = 0; i < str.length; i++) {
